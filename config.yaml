@@ -1,0 +1,25 @@
+project:
+  name: self_evolving_transformer
+  seed: 42
+
+training:
+  batch_size: 16
+  epochs: 3
+  learning_rate: 0.0003
+  max_seq_length: 128
+
+model:
+  min_layers: 2
+  max_layers: 8
+  hidden_dim_choices: [128,256,512]
+  head_choices: [4,8,12]
+  expert_choices: [0,2,4]
+
+nas:
+  population_size: 10
+  generations: 20
+  mutation_rate: 0.2
+  crossover_rate: 0.3
+
+hardware:
+  device: auto

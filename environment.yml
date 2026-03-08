@@ -1,0 +1,17 @@
+name: evolving_transformer
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+      - transformers
+      - datasets
+      - tqdm
+      - zstandard
+      - numpy
+      - scipy
